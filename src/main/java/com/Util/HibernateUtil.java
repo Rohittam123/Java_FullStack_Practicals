@@ -9,7 +9,7 @@ public class HibernateUtil {
     static {
         try {
             Configuration configuration = new Configuration();
-            configuration.configure("hibernate.cfg.xml");  // 👈 yahan manually config file ka naam de diya
+            configuration.configure("hibernate.cfg.xml"); 
             sessionFactory = configuration.buildSessionFactory();
         } catch (Throwable ex) {
             System.err.println("Initial SessionFactory creation failed: " + ex);
