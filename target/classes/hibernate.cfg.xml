@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database Connection Settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/Hibernate_db</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">rohit@123</property>
+
+        <!-- Hibernate Properties -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Mapping Files -->
+        <mapping class="com.entity.Region"/>
+        <mapping class="com.entity.Country"/>
+
+    </session-factory>
+</hibernate-configuration>
